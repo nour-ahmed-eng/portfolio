@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nour Ahmed | Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- FontAwesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Effet de grille spatiale subtile en arrière-plan */
+        .tech-bg {
+            background-color: #050515;
+            background-image: 
+                linear-gradient(rgba(30, 27, 75, 0.4) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(30, 27, 75, 0.4) 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
+    </style>
+</head>
+<body class="tech-bg text-slate-200 font-sans antialiased selection:bg-purple-500 selection:text-white">
+
+    <!-- BARRE DE NAVIGATION -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-purple-950/30">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="text-xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-400">
+                N<span class="text-white">A</span>.
+            </div>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-400">
+                <a href="#home" class="hover:text-purple-400 transition-colors duration-300 text-purple-400">Accueil</a>
+                <a href="#about" class="hover:text-purple-400 transition-colors duration-300">À Propos</a>
+                <a href="#skills" class="hover:text-purple-400 transition-colors duration-300">Compétences</a>
+                <a href="#projects" class="hover:text-purple-400 transition-colors duration-300">Projets</a>
+                <a href="#engagement" class="hover:text-purple-400 transition-colors duration-300">Engagement</a>
+                <a href="#contact" class="hover:text-purple-400 transition-colors duration-300">Contact</a>
+            </div>
+            <div class="md:hidden text-slate-400 hover:text-white cursor-pointer">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECTION HERO (ACCUEIL) -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-16 relative overflow-hidden">
+        <!-- Lueurs spatiales violettes et indigo en arrière-plan -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-purple-600/10 rounded-full blur-[140px] pointer-events-none"></div>
+        <div class="absolute bottom-10 right-10 w-[400px] h-[400px] bg-indigo-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="max-w-6xl mx-auto px-6 w-full grid grid-cols-1 md:grid-cols-12 gap-12 items-center z-10 py-12">
+            
+            <!-- CONTENU TEXTUEL (Gauche) -->
+            <div class="md:col-span-7 flex flex-col justify-center space-y-6 text-center md:text-left">
+                <div class="inline-flex items-center justify-center md:justify-start space-x-2 text-purple-400 text-sm font-semibold tracking-wider uppercase">
+                    <span class="w-2 h-2 rounded-full bg-purple-400 animate-pulse"></span>
+                    <span>Bienvenue sur mon portfolio</span>
+                </div>
+                
+               <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-none">
+                   Bonjour, je suis <br>
+                   <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-fuchsia-400 to-indigo-400 drop-shadow-[0_2px_10px_rgba(168,85,247,0.2)]">
+                       Nour Ahmed
+                   </span>
+                </h1>
+                
+                <h2 class="text-lg sm:text-xl font-medium text-slate-300">
+                    Élève Ingénieure en Génie des Systèmes Électroniques de Communication
+                </h2>
+                
+                <p class="text-slate-400 text-base max-w-xl leading-relaxed">
+                    Passionnée par l'innovation technologique, l'électronique embarquée et les télécommunications. 
+                    Alliant rigueur technique et leadership associatif pour concevoir les systèmes de demain.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 text-sm text-slate-400 pt-2">
+                    <div class="flex items-center space-x-2">
+                        <i class="fa-solid fa-location-dot text-purple-400"></i>
+                        <span>Sousse / Sfax, Tunisie</span>
+                    </div>
+                    <span class="hidden sm:inline text-slate-800">|</span>
+                    <div class="flex items-center space-x-2">
+                        <i class="fa-solid fa-circle-check text-purple-400 text-xs"></i>
+                        <span>Disponible pour projets & stages</span>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 pt-4">
+                    <a href="#projects" class="w-full sm:w-auto px-8 py-3 text-center bg-gradient-to-r from-purple-500 to-indigo-600 text-white font-bold rounded-xl shadow-lg shadow-purple-500/20 hover:shadow-purple-500/40 hover:scale-[1.02] transition-all duration-300">
+                        Voir mes projets
+                    </a>
+                    <a href="mailto:nourahmedieee@icloud.com" class="w-full sm:w-auto px-8 py-3 text-center border border-purple-900 text-white font-medium rounded-xl hover:bg-purple-950/30 hover:border-purple-500 transition-all duration-300">
+                        Me contacter
+                    </a>
+                </div>
+
+                <div class="flex items-center justify-center md:justify-start space-x-6 pt-6 text-xl text-slate-400">
+                    <a href="mailto:nourahmedieee@icloud.com" class="hover:text-purple-400 transition-colors"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/nour-ahmed-a24a03374/" target="_blank" class="hover:text-purple-400 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/nour.ah.306617" target="_blank" class="hover:text-purple-400 transition-colors"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/nour.ahmed624_/" target="_blank" class="hover:text-purple-400 transition-colors"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+                    
+                </div>
+            </div>
+
+            <!-- PHOTO / VISUEL GRAPHIQUE (Droite) -->
+            <div class="md:col-span-5 flex justify-center items-center relative">
+                <div class="absolute w-72 h-72 sm:w-80 sm:h-80 rounded-full border border-purple-500/20 animate-[spin_25s_linear_infinite] pointer-events-none">
+                    <div class="absolute -top-1 left-1/2 w-3 h-3 bg-purple-400 rounded-full shadow-[0_0_10px_#c084fc]"></div>
+                </div>
+                
+                <div class="w-64 h-64 sm:w-72 sm:h-72 rounded-full p-1.5 bg-gradient-to-tr from-indigo-600 via-purple-400 to-pink-500 shadow-[0_0_30px_rgba(168,85,247,0.15)]">
+                    <div class="w-full h-full rounded-full bg-slate-950 overflow-hidden flex items-center justify-center border-4 border-slate-950">
+                        <img src="nour-avatar.jpg" alt="Nour Ahmed" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" onerror="this.style.display='none'; document.getElementById('avatar-placeholder').classList.remove('hidden')">
+                        
+                        <div id="avatar-placeholder" class="hidden flex flex-col items-center text-center p-4">
+                            <i class="fa-solid fa-user-astronaut text-5xl text-purple-400 mb-2 animate-bounce"></i>
+                            <span class="text-xs text-slate-500">Ajoutez votre photo ici<br>(nour-avatar.jpg)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION À PROPOS -->
+    <section id="about" class="py-20 relative border-t border-purple-950/20 bg-slate-950/20">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+            
+            <div class="md:col-span-5 bg-gradient-to-b from-slate-900 to-indigo-950/30 border border-purple-950/40 p-8 rounded-2xl shadow-xl relative overflow-hidden group">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-purple-500/5 rounded-full blur-2xl group-hover:bg-purple-500/10 transition-all duration-500"></div>
+                <h3 class="text-2xl font-bold text-white mb-4">Mon Parcours</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                    Actuellement en <strong class="text-purple-400">Cycle Ingénieur</strong> à l'ENETCOM, j'ai forgé ma rigueur scientifique lors de mes deux années de classes préparatoires PC.
+                </p>
+                <div class="space-y-4">
+                    <div class="flex items-start space-x-3">
+                        <div class="w-8 h-8 rounded-lg bg-purple-950 flex items-center justify-center text-purple-400 font-bold text-xs shrink-0">01</div>
+                        <div>
+                            <h4 class="text-white text-sm font-semibold">Vision technologique</h4>
+                            <p class="text-slate-500 text-xs">Passionnée par l'IoT, l'embarqué et les systèmes connectés.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <div class="w-8 h-8 rounded-lg bg-indigo-950 flex items-center justify-center text-indigo-400 font-bold text-xs shrink-0">02</div>
+                        <div>
+                            <h4 class="text-white text-sm font-semibold">Esprit d'équipe & Leadership</h4>
+                            <p class="text-slate-500 text-xs">Secrétaire Générale IEEE ENETCOM RAS, habituée à piloter des projets collectifs.[cite: 1]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:col-span-7 space-y-6">
+                <h2 class="text-3xl font-extrabold text-white tracking-tight">
+                    Allier Rigueur Scientifique & <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-400">Leadership Humain</span>
+                </h2>
+                <p class="text-slate-400 leading-relaxed">
+                    Mon parcours associatif m'a appris à être polyvalente et agile. De l'animation d'ateliers de robotique pour enfants à la gestion de budgets pour des sections internationales, j'aime créer des ponts entre la technique pure et le partage de connaissances.[cite: 1]
+                </p>
+                
+                <div class="grid grid-cols-3 gap-4 pt-4 text-center md:text-left">
+                    <div class="p-4 bg-slate-900/40 border border-purple-950/20 rounded-xl">
+                        <div class="text-2xl font-bold text-purple-400">3ème</div>
+                        <div class="text-slate-500 text-xs mt-1">Place Challenge TSYP[cite: 1]</div>
+                    </div>
+                    <div class="p-4 bg-slate-900/40 border border-purple-950/20 rounded-xl">
+                        <div class="text-2xl font-bold text-indigo-400">2025</div>
+                        <div class="text-slate-500 text-xs mt-1">Entrée Ingénieur[cite: 1]</div>
+                    </div>
+                    <div class="p-4 bg-slate-900/40 border border-purple-950/20 rounded-xl">
+                        <div class="text-2xl font-bold text-pink-400">2+</div>
+                        <div class="text-slate-500 text-xs mt-1">Ans d'impact IEEE[cite: 1]</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION COMPÉTENCES -->
+    <section id="skills" class="py-20 relative bg-slate-950/40">
+        <div class="max-w-6xl mx-auto px-6">
+            
+            <div class="text-center max-w-xl mx-auto mb-16">
+                <h2 class="text-3xl font-extrabold text-white mb-4">Mes Compétences</h2>
+                <p class="text-slate-400 text-sm">Une boîte à outils équilibrée entre le développement logiciel embarqué, la simulation d'ingénierie et la gestion de projet.[cite: 1]</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="bg-slate-900/30 border border-purple-950/20 p-6 rounded-2xl hover:border-purple-500/30 transition-all duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-purple-950/50 border border-purple-800/20 flex items-center justify-center text-purple-400 text-xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3 class="text-white font-bold text-lg mb-3">Programmation</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-900 text-xs text-slate-300 rounded-md">C</span>
+                        <span class="px-3 py-1 bg-slate-900 text-xs text-slate-300 rounded-md">C++</span>
+                        <span class="px-3 py-1 bg-slate-900 text-xs text-slate-300 rounded-md">Python</span>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900/30 border border-purple-950/20 p-6 rounded-2xl hover:border-indigo-500/30 transition-all duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-950/50 border border-indigo-800/20 flex items-center justify-center text-indigo-400 text-xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-microchip"></i>
+                    </div>
+                    <h3 class="text-white font-bold text-lg mb-3">Électronique Embarquée</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-900 text-xs text-slate-300 rounded-md">Arduino (Expert)</span>
+                        <span class="px-3 py-1 bg-slate-900 text-xs text-slate-300 rounded-md">Proteus 8</span>
+                        <span class="px-3 py-1 bg-slate-900 text-xs text-slate-300 rounded-md">Capteurs & IoT</span>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900/30 border border-purple-950/20 p-6 rounded-2xl hover:border-blue-500/30 transition-all duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-blue-950/50 border border-blue-800/20 flex items-center justify-center text-blue-400 text-xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-white font-bold text-lg mb-3">Outils de Simulation</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-900 text-xs text-slate-300 rounded-md">MATLAB</span>
+                        <span class="px-3 py-1 bg-slate-900 text-xs text-slate-300 rounded-md">LabVIEW</span>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900/30 border border-purple-950/20 p-6 rounded-2xl hover:border-pink-500/30 transition-all duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-pink-950/50 border border-pink-800/20 flex items-center justify-center text-pink-400 text-xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-list-check"></i>
+                    </div>
+                    <h3 class="text-white font-bold text-lg mb-3">Gestion & Soft Skills</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-900 text-xs text-slate-300 rounded-md">Leadership</span>
+                        <span class="px-3 py-1 bg-slate-900 text-xs text-slate-300 rounded-md">Suivi Stratégique</span>
+                        <span class="px-3 py-1 bg-slate-900 text-xs text-slate-300 rounded-md">Travail d'équipe</span>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900/30 border border-purple-950/20 p-6 rounded-2xl hover:border-fuchsia-500/30 transition-all duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-fuchsia-950/50 border border-fuchsia-800/20 flex items-center justify-center text-fuchsia-400 text-xl mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+                    <h3 class="text-white font-bold text-lg mb-3">Design & Communication</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-900 text-xs text-slate-300 rounded-md">UI/UX App</span>
+                        <span class="px-3 py-1 bg-slate-900 text-xs text-slate-300 rounded-md">Marketing Digital</span>
+                        <span class="px-3 py-1 bg-slate-900 text-xs text-slate-300 rounded-md">Design Graphique</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION PROJETS -->
+    <section id="projects" class="py-20 relative bg-slate-950/20 border-t border-purple-950/20">
+        <div class="max-w-6xl mx-auto px-6">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <div class="text-purple-400 text-sm font-semibold tracking-wider uppercase mb-2">// Réalisations</div>
+                    <h2 class="text-3xl font-extrabold text-white">Projets & Compétitions</h2>
+                </div>
+                <p class="text-slate-400 text-sm max-w-md mt-4 md:mt-0">
+                    Aperçu des solutions techniques et des applications concrètes que j'ai développées lors de challenges nationaux et de projets académiques.[cite: 1]
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- PROJET 1 : SmartFleet -->
+                <div class="bg-gradient-to-b from-slate-900 to-indigo-950/20 border border-purple-950/30 rounded-2xl overflow-hidden shadow-xl group hover:border-purple-500/40 hover:shadow-purple-500/10 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="h-48 bg-slate-950 flex items-center justify-center relative overflow-hidden border-b border-purple-950/20">
+                            <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#a855f7_1px,transparent_1px)] [background-size:16px_16px]"></div>
+                            <i class="fa-solid fa-truck-fleet text-6xl text-purple-500/30 group-hover:scale-110 transition-transform duration-500 z-10"></i>
+                            <span class="absolute top-4 right-4 px-3 py-1 bg-purple-500/10 text-purple-300 border border-purple-500/20 rounded-full text-xs font-semibold tracking-wide">
+                                <i class="fa-solid fa-trophy mr-1.5"></i> 3ème Place Nationale[cite: 1]
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <div class="text-xs font-semibold text-purple-400 uppercase tracking-wider mb-2">Challenge National TSYP[cite: 1]</div>
+                            <h3 class="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">SmartFleet — Flotte Coopérative</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                                Organisé par IEEE RAS & VTS Tunisia Section. Ce projet consistait à modéliser et développer des stratégies de livraison coopérative au sein d'une ville simulée, avec une optimisation des algorithmes de navigation et une gestion de flotte en temps réel.[cite: 1]
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2.5 py-0.5 bg-slate-900 text-[11px] font-medium text-slate-300 rounded">Python</span>
+                            <span class="px-2.5 py-0.5 bg-slate-900 text-[11px] font-medium text-slate-300 rounded">Algorithmes</span>
+                            <span class="px-2.5 py-0.5 bg-slate-900 text-[11px] font-medium text-slate-300 rounded">Simulation</span>
+                        </div>
+                        <div class="text-xs text-slate-500 italic">
+                            <i class="fa-solid fa-users mr-1"></i> Équipe IEEE ENETCOM[cite: 1]
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJET 2 : IQRAA PLUS -->
+                <div class="bg-gradient-to-b from-slate-900 to-indigo-950/20 border border-purple-950/30 rounded-2xl overflow-hidden shadow-xl group hover:border-indigo-500/40 hover:shadow-indigo-500/10 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="h-48 bg-slate-950 flex items-center justify-center relative overflow-hidden border-b border-purple-950/20">
+                            <div class="absolute inset-0 opacity-20 bg-[linear-gradient(to_right,#6366f1_1px,transparent_1px)] [background-size:24px_24px]"></div>
+                            <i class="fa-solid fa-mobile-screen-button text-6xl text-indigo-500/30 group-hover:scale-110 transition-transform duration-500 z-10"></i>
+                            <span class="absolute top-4 right-4 px-3 py-1 bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 rounded-full text-xs font-semibold tracking-wide">
+                                <i class="fa-solid fa-heart mr-1.5"></i> Tech Inclusive[cite: 1]
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <div class="text-xs font-semibold text-indigo-400 uppercase tracking-wider mb-2">Application Mobile Inclusive[cite: 1]</div>
+                            <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-400 transition-colors">IQRAA PLUS</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                                Conception et réalisation d'une application mobile dédiée aux personnes atteintes de troubles de l'apprentissage (dyslexie, TDAH). J'ai mis en place des fonctionnalités d'UI/UX spécifiquement adaptées pour faciliter la lecture, réduire la surcharge cognitive et maximiser la concentration.[cite: 1]
+                            </p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2.5 py-0.5 bg-slate-900 text-[11px] font-medium text-slate-300 rounded">UI/UX Design</span>
+                            <span class="px-2.5 py-0.5 bg-slate-900 text-[11px] font-medium text-slate-300 rounded">Mobile App</span>
+                            <span class="px-2.5 py-0.5 bg-slate-900 text-[11px] font-medium text-slate-300 rounded">Accessibilité</span>
+                        </div>
+                        <div class="text-xs text-slate-500 italic">
+                            <i class="fa-solid fa-gears mr-1"></i> Conception & Design[cite: 1]
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION ENGAGEMENT ASSOCIATIF -->
+    <section id="engagement" class="py-20 relative bg-slate-950/40">
+        <div class="max-w-4xl mx-auto px-6">
+            
+            <div class="text-center max-w-xl mx-auto mb-16">
+                <div class="text-purple-400 text-sm font-semibold tracking-wider uppercase mb-2">// Impact & Leadership</div>
+                <h2 class="text-3xl font-extrabold text-white">Engagement Associatif</h2>
+            </div>
+
+            <div class="relative border-l border-purple-950/50 ml-4 md:ml-32 space-y-12">
+                
+                <div class="relative pl-8 group">
+                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-950 border-2 border-purple-400 group-hover:bg-purple-400 transition-colors duration-300"></div>
+                    <div class="md:absolute md:-left-36 md:top-1 md:w-28 text-sm font-semibold text-purple-400/80 md:text-right">
+                        Depuis Fév. 2024[cite: 1]
+                    </div>
+                    <div class="bg-slate-900/30 border border-purple-950/20 p-6 rounded-xl hover:border-purple-900/50 transition-all">
+                        <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                            Secrétaire Générale <span class="text-xs px-2 py-0.5 bg-purple-500/10 text-purple-300 rounded-md font-normal">IEEE ENETCOM RAS SBC</span>[cite: 1]
+                        </h3>
+                        <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                            Gestion administrative globale et suivi stratégique des projets du chapitre. Rédaction des rapports de progression officiels et pilotage actif des campagnes de collecte de fonds.[cite: 1]
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 group">
+                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-950 border-2 border-indigo-400 group-hover:bg-indigo-400 transition-colors duration-300"></div>
+                    <div class="md:absolute md:-left-36 md:top-1 md:w-28 text-sm font-semibold text-indigo-400/80 md:text-right">
+                        Depuis Oct. 2023[cite: 1]
+                    </div>
+                    <div class="bg-slate-900/30 border border-purple-950/20 p-6 rounded-xl hover:border-purple-900/50 transition-all">
+                        <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                            Instructrice en Robotique <span class="text-xs px-2 py-0.5 bg-indigo-500/10 text-indigo-300 rounded-md font-normal">École Primaire (via IEEE)</span>[cite: 1]
+                        </h3>
+                        <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                            Vulgarisation scientifique à travers l'animation d'ateliers d'initiation pratique à l'électronique et à la programmation d'architectures Arduino pour de jeunes élèves.[cite: 1]
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 group">
+                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-950 border-2 border-pink-400 group-hover:bg-pink-400 transition-colors duration-300"></div>
+                    <div class="md:absolute md:-left-36 md:top-1 md:w-28 text-sm font-semibold text-pink-400/80 md:text-right">
+                        Depuis Sept. 2023[cite: 1]
+                    </div>
+                    <div class="bg-slate-900/30 border border-purple-950/20 p-6 rounded-xl hover:border-purple-900/50 transition-all">
+                        <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                            Membre Actif — Marketing <span class="text-xs px-2 py-0.5 bg-pink-500/10 text-pink-300 rounded-md font-normal">Orbeats Radio Club</span>[cite: 1]
+                        </h3>
+                        <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                            Conception créative de supports visuels événementiels et contribution au design de produits pour étendre la visibilité du club et de ses projets.[cite: 1]
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION CONTACT & FOOTER -->
+    <section id="contact" class="py-20 relative bg-slate-950/20 border-t border-purple-950/20">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            
+            <div class="max-w-xl mx-auto mb-10">
+                <h2 class="text-3xl font-extrabold text-white mb-4">Travaillons Ensemble</h2>
+                <p class="text-slate-400 text-sm">
+                    Actuellement à la recherche d'opportunités stimulantes, de projets innovants ou de stages d'ingénierie. Mon profil vous intéresse ? N'hésitez pas à me contacter ![cite: 1]
+                </p>
+            </div>
+
+            <div class="bg-gradient-to-r from-slate-900 to-indigo-950/40 border border-purple-950/30 p-8 rounded-2xl max-w-lg mx-auto shadow-xl">
+                <p class="text-xs font-semibold text-purple-400 uppercase tracking-widest mb-2">Canal Direct</p>
+                <a href="mailto:nourahmedieee@icloud.com" class="text-xl sm:text-2xl font-bold text-white hover:text-purple-400 transition-colors break-words">
+                    nourahmedieee@gmail.com
+                </a>
+                
+                <div class="w-full h-px bg-purple-950/20 my-6"></div>
+                
+                <p class="text-sm text-slate-500 mb-4">Retrouvez-moi également sur mes réseaux :</p>
+                <div class="flex justify-center space-x-6 text-2xl text-slate-400">
+                    <a href="https://www.linkedin.com/in/nour-ahmed-a24a03374/" target="_blank" class="hover:text-purple-400 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/nour.ah.306617" target="_blank" class="hover:text-purple-400 transition-colors"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/nour.ahmed624_/" target="_blank" class="hover:text-purple-400 transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                   
+                </div>
+            </div>
+
+            <div class="mt-20 text-xs text-slate-600">
+                © 2026 Nour Ahmed. Tous droits réservés. <br>
+                Conçu avec rigueur & passion.
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
